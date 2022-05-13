@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+}
+
+h1{
+    margin-left: 2vw;
+    font-size: 3vw;
+    color: #D2872C;
+}
+
+header nav{
+    margin-top: 1vw;
+    margin-right: 2vw;
+    width: 25%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    font-size: 1.6vw;
+    color: #766F68;
+    font-weight: 400;
+}
+
+li:hover{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.menu{
+    display: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    position: absolute;
+    left: 10vw;
+}
+
+img{
+    position: absolute;
+    z-index: -1;
+    width: 50vw;
+    right: 10vw;
+}
+
+h2{
+    font-size: 4vw;
+    color: #766F68;
+}
+
+.graphics{
+    margin-bottom: 2vw;
+}
+
+h3{
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #766F68;
+}
+
+.team{
+    margin-bottom: 4vw;
+}
+
+button{
+    background-color: #D2872C;
+    border: none;
+    width: 18vw;
+    padding: 1vw;
+    border-radius: 15px 15px 15px 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 800px) {
+    .menu{
+        display:initial;
+        width: 6vw;
+        margin-top: 1vw;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    h1{
+        font-size: 6vw;
+        margin-left: 10vw;
+    }
+
+    main img{
+        right: 10vw;
+        width: 80vw;
+    }
+
+    article{
+        left: 20vw;
+        top: 65vw;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 7vw;
+    }
+
+    .graphics{
+        margin-bottom: 4vw;
+    }
+
+    h3{
+        font-size: 4vw;
+    }
+
+    .team{
+        margin-bottom: 6vw;
+    }
+
+    button{
+        width: 50vw;
+        font-size: 4vw;
+        padding: 3.5vw;
+    }
+}
